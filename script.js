@@ -5,7 +5,7 @@ $(document).ready(function() {
     console.log("jQuery is ready!");
 
 
-    // Part 1 — Selectors & CSS
+    //1
 
     $("#changeIdBtn").click(function() {
         $("#idExample").text("The text was changed using the ID selector.");
@@ -23,7 +23,7 @@ $(document).ready(function() {
     });
 
 
-    // Part 2 — Visibility Methods
+    //2 - 1
 
     $("#hideBtn").click(function() {
         $("#visibilityText").hide();
@@ -38,7 +38,7 @@ $(document).ready(function() {
     });
 
 
-    // Part 2 — Fade Methods
+    //2 - 2
 
     $("#fadeInBtn").click(function() {
         $("#fadeImage").fadeIn(600);
@@ -53,7 +53,7 @@ $(document).ready(function() {
     });
 
 
-    // Part 2 — Slide Methods
+    //2 - 3
 
     $("#slideDownBtn").click(function() {
         $("#slidePanel").slideDown(500);
@@ -68,7 +68,7 @@ $(document).ready(function() {
     });
 
 
-    // Part 3 — Add & Remove Elements
+    //3- 1
 
     let itemNumber = 2;
 
@@ -89,15 +89,11 @@ $(document).ready(function() {
     });
 
 
-    // Part 3 — Modifying Attributes
+    //3 - 2
 
     $("#changeImageBtn").click(function() {
-        $("#attributeImage").attr(
-            "src",
-            "https://picsum.photos/id/1035/600/350"
-        );
-
-        $("#attributeImage").attr("alt", "New landscape image");
+        $("#attributeImage").attr("src", "images/9d4e23a0e077589918de3255e7813637.jpg");
+        $("#attributeImage").attr("alt", "Image 2");
     });
 
     $("#changeLinkBtn").click(function() {
@@ -107,7 +103,7 @@ $(document).ready(function() {
     });
 
 
-    // Part 3 — Form Interaction
+    //3 - 3
 
     $("#nameInput").on("input", function() {
         let name = $(this).val();
@@ -134,7 +130,7 @@ $(document).ready(function() {
     });
 
 
-    // Part 4 — Basic Animation
+    //4 - 1
 
     $("#basicAnimateBtn").click(function() {
         $("#basicBox").stop(true).animate({
@@ -154,7 +150,7 @@ $(document).ready(function() {
     });
 
 
-    // Part 4 — Sequential Animations
+    //4 - 2
 
     $("#sequenceAnimateBtn").click(function() {
 
@@ -181,7 +177,7 @@ $(document).ready(function() {
     });
 
 
-    // Part 4 — Combined Animation
+    //4 - 3
 
     $("#combinedAnimateBtn").click(function() {
         $("#combinedBox").stop(true).animate({
@@ -203,7 +199,7 @@ $(document).ready(function() {
     });
 
 
-    // Part 5
+    //5
     $(".accordion-question").click(function() {
 
         $(this).next(".accordion-answer").slideToggle(300);
