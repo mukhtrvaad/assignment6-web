@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 6 | Part 3</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="page">
+        <header>
+            <h1>INTERACTIVE WEB</h1>
+            <p>jQuery Practice</p>
+        </header>
+
+        <nav>
+            <a href="index.html">PART 1</a>
+            <a href="part2.html">PART 2</a>
+            <a href="part3.html" class="active">PART 3</a>
+            <a href="part4.html">PART 4</a>
+            <a href="project.html">PROJECT</a>
+        </nav>
+
+        <main>
+            <h2>Part 3 — DOM Manipulation with jQuery</h2>
+
+            <section>
+                <h3>Task 5 — Add &amp; Remove Elements</h3>
+                <p>Use the buttons to add an item to the list or remove the last one.</p>
+
+                <button id="appendItemBtn">Add Item</button>
+                <button id="prependItemBtn">Add to Beginning</button>
+                <button id="removeItemBtn">Remove Item</button>
+
+                <ul id="itemList">
+                    <li>Item 1</li>
+                    <li>Item 2</li>
+                </ul>
+            </section>
+
+            <section>
+                <h3>Task 6 — Modifying Attributes</h3>
+
+                <img id="attributeImage"
+                     class="demo-image"
+                     src="https://picsum.photos/id/1025/600/350"
+                     alt="Dog">
+
+                <div>
+                    <button id="changeImageBtn">Change Image</button>
+                </div>
+
+                <p>
+                    <a id="dynamicLink"
+                       href="https://www.w3schools.com/jquery/"
+                       target="_blank">
+                        Open the current link
+                    </a>
+                </p>
+
+                <button id="changeLinkBtn">Change Link</button>
+            </section>
+
+            <section>
+                <h3>Task 7 — Form Interaction</h3>
+                <p>Type your name and email. The result will appear below the form.</p>
+
+                <form id="liveForm">
+                    <label for="nameInput">Name</label>
+                    <input type="text"
+                           id="nameInput"
+                           placeholder="Enter your name">
+
+                    <label for="emailInput">Email</label>
+                    <input type="email"
+                           id="emailInput"
+                           placeholder="Enter your email">
+                </form>
+
+                <div class="live-result">
+                    <p>Name: <span id="nameOutput">—</span></p>
+                    <p>Email: <span id="emailOutput">—</span></p>
+                </div>
+            </section>
+        </main>
+
+        <footer>&copy; 2026 | Assignment 6</footer>
+    </div>
+</body>
+</html>
